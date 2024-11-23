@@ -1,0 +1,34 @@
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-card {
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    margin: 15px 0 5px;
+    font-size: 18px;
+    color: #333;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #555;
+}
