@@ -39,6 +39,43 @@
     <main>
         <section>
             <h1>Nuestro experimentado Equipo Médico</h1>
+
+            <!-- Filtros -->
+            <div>
+                <label for="specialty-filter">Especialidad:</label>
+                <select id="specialty-filter">
+                    <option value="all">Todas</option>
+                    <option value="Cardiología">Cardiología</option>
+                    <option value="Dermatología">Dermatología</option>
+                    <option value="Ortopedia">Ortopedia</option>
+                    <option value="Ginecología">Ginecología</option>
+                    <option value="Endocrinología">Endocrinología</option>
+                    <option value="Neurología">Neurología</option>
+                    <option value="Gastroenterología">Gastroenterología</option>
+                    <option value="Oftalmología">Oftalmología</option>
+                    <option value="Otorrinolaringología">Otorrinolaringología</option>
+                    <option value="Pedriatría">Pedriatría</option>
+                    
+                </select>
+            
+                <label for="experience-filter">Años de experiencia:</label>
+                <select id="experience-filter">
+                    <option value="all">Cualquiera</option>
+                    <option value="5">5+</option>
+                    <option value="10">10+</option>
+                    <option value="15">15+</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="sort-experience">Ordenar por experiencia:</label>
+                <select id="sort-experience">
+                    <option value="none">Sin ordenar</option>
+                    <option value="asc">Menor a mayor</option>
+                    <option value="desc">Mayor a menor</option>
+                </select>
+            </div>
+
             <!-- Contenedor dinámico para las tarjetas -->
             <div id="team-container" class="team-container">
                 <!-- Las tarjetas serán generadas aquí dinámicamente con JS -->
@@ -62,7 +99,7 @@
                 <p>Dirección: Av. Vitacura 7878, Vitacura, Chile</p>
             </div>
 
-            
+
             <div class="footer-column">
                 <h3 class="fw-bold">Síguenos</h3>
                 <div class="social-icons">
@@ -78,12 +115,13 @@
                 </div>
             </div>
 
-            
+
         </div>
 
 
     </footer>
 
-    <script src="JS/Personal/loadDoctors.js"></script> <!-- Enlace al archivo JS -->
+    <!-- Enlace al archivo JS -->
+    <script src="JS/Personal/loadDoctorsEstaticos.js"></script>
 </body>
 </html>
